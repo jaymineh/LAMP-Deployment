@@ -10,7 +10,7 @@
 - Modified the network security group from the AWS console to allow inbound traffic to port 80 for HTTP connections. See below screenshot.
 ![inbound rules](https://user-images.githubusercontent.com/91850543/158665491-c6b59677-21cf-4083-b586-5705ace372e8.png)
 
-- Ran a curl to check if apache server is reachable. Used `curl http:localhost:80` & `curl http:127.0.0.1:80`. See output below.
+- Ran a curl to check if apache server is reachable. Used `curl http://localhost:80` & `curl http://127.0.0.1:80`. See output below.
 ![curling to check http](https://user-images.githubusercontent.com/91850543/158665855-8ca3f568-7103-41fa-8d56-771aea2e2e1e.png)
 
 - Ran `http://54.90.168.4:80` to check if apache was reachable on a browser. see the result below.
