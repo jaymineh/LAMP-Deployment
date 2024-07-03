@@ -4,7 +4,7 @@
 
 - Ran `sudo apt update` & `sudo apt install apache2` to update the packages on the server and install apache.
 
-  - Also ran `sudo system ctl status apache2` to verify apache was running in my linux server. See screenshot below.
+  - Also ran `sudo systemctl status apache2` to verify apache was running in my linux server. See screenshot below.
 ![apache running](https://user-images.githubusercontent.com/91850543/158664449-b6297870-3913-4d00-8bc7-2373f8686da1.png)
 
 - Modified the network security group from the AWS console to allow inbound traffic to port 80 for HTTP connections. See below screenshot.
