@@ -14,7 +14,7 @@
 ![curling to check http](https://user-images.githubusercontent.com/91850543/158665855-8ca3f568-7103-41fa-8d56-771aea2e2e1e.png)
 
 - Ran `http://54.90.168.4:80` to check if apache was reachable on a browser. see the result below.
-![image](https://user-images.githubusercontent.com/91850543/158668702-2e131040-89c5-4e23-a50b-b8ed21fec628.png)
+![image](https://github.com/jaymineh/P1_LAMP_Deployment/assets/91850543/6b65ce7f-0896-40f1-b5ee-7f30c12c6031)
 
 
 **Step 2 - Installing MySQL**
@@ -55,10 +55,9 @@ LAMP stack completely installed and fully operational.
 - Ran `sudo apache2ctl configtest` to ensure my config doesn't have any syntax errors. Also ran `sudo systemctl reload apache2` to reload apache so the changes take effect. See below.
 ![image](https://user-images.githubusercontent.com/91850543/158687222-b900a708-3160-4061-80af-5e9435cf88cb.png)
 
-- Created an index.html file in /var/www/projectlamp to check if the virtual host works as expected.
+- Created an index.html file in /var/www/projectlamp to check if the virtual host works as expected. Generate random HTML code and place in the index.html file, save and reload apache2 for the changes to take effect. See result below, putting in the public IP of the instance with port 80.
 
-  - Ran `sudo echo 'Hello LAMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectlamp/index.html` and went to browser to check if echo command was successful. See result below.
-![lamp html](https://user-images.githubusercontent.com/91850543/158688448-7db78bfb-812b-4ffc-819b-933709f6b5ce.png)
+![image](https://github.com/jaymineh/P1_LAMP_Deployment/assets/91850543/bc2f6e68-dc02-44d3-abbc-9855ad375e1c)
 
 **Step 5 - Enable PHP on the website**
 ---
@@ -89,9 +88,14 @@ phpinfo();
   - Saved the file with `:wq`.
 
 - Reloaded browser page and got the PHP page below.
-![lamp php](https://user-images.githubusercontent.com/91850543/158694449-16502804-b913-472f-a4e2-88b6e965e80b.png)
+![image](https://github.com/jaymineh/P1_LAMP_Deployment/assets/91850543/94626e36-24b9-4953-b877-f694d7c54979)
 
-Project 1 Complete. LAMP stack successfully deployed!
+- Change default php code back to code in index.html as that is the landing page visitors are supposed to see. Reload apache2 after.
+![image](https://github.com/jaymineh/P1_LAMP_Deployment/assets/91850543/b75d9fda-ffac-4679-854b-eb195d66f9fc)
+
+
+
+**Project 1 Complete. LAMP stack successfully deployed!**
 
 
 
